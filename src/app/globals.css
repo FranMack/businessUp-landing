@@ -9,12 +9,49 @@
 }
 
 html {
-  font-size: 62, 5%;
-  overflow-x: hidden;
-  
-}
 
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
 
 .bg-gradient-soft {
   @apply bg-gradient-to-b from-[#cdd7dc] via-[#dbe1e5] via-[#ebf0f0] to-[#f5fafa];
 }
+
+.custom-shadow {
+  @apply shadow-[0_4px_20px_rgba(0,0,0,0.1)];
+}
+
+
+/* clases rotación cards*/
+
+.perspective {
+  perspective: 1000px;
+}
+
+.transform-style {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.group:hover .group-hover\:rotate-card {
+  transform: rotateY(180deg);
+}
+
+.group:hover .rotate-card-back {
+  transform: rotateY(0deg);
+}
+
+.group-hover\:rotate-card {
+  transform: rotateY(0deg);
+  transition: transform 0.7s;
+}
+
+.rotate-card-back {
+  transform: rotateY(-180deg);
+  transition: transform 0.7s;
+}
+/* clases rotación cards*/

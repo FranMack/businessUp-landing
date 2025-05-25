@@ -1,0 +1,10 @@
+export { AboutUs } from "./aboutUs/AboutUs";
+export { Title } from "./commons/Title";
+export { Contact } from "./contact/Contact";
+export { Hero } from "./hero/Hero";
+export { OurServices } from "./ourServices/OurServices";
+export { Solutions } from "./solutions/Solutions";
+export { Navbar } from "./ui/Navbar";
+export { WhatsUpButton } from "./commons/WhatsUpButton";
+export { OurClients } from "./ourClients/OurClients";
+export { ImageDecoration } from "./commons/ImageDecoration";

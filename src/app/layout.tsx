@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
-import { Barlow } from "next/font/google";
-import { Navbar } from "./components";
-import "./globals.css";
+import { Navbar, WhatsUpButton } from "../features";
 
-const barlow = Barlow({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
+import { ToastContainer } from "react-toastify";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,8 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${barlow.className}  antialiased`}>
+      <body className={`antialiased`}>
         <Navbar />
+        <WhatsUpButton />
+        <ToastContainer style={{ fontSize: "1rem" }} />
+
         {children}
       </body>
     </html>

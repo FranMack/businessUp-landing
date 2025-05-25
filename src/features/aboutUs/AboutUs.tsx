@@ -1,12 +1,23 @@
 import Image from "next/image";
-import { Title } from "./commons/Title";
+import { Title } from "../commons/Title";
+import { AboutUsImagesDecoration } from "./components/AboutUsImagesDecoration";
+
 export const AboutUs = () => {
   return (
-    <section className="w-screen h-screen relative flex bg-gradient-soft">
+    <section
+      id="aboutUs"
+      className="w-screen h-screen relative flex bg-lightGray"
+    >
+      <AboutUsImagesDecoration/>
       <div className="w-1/2 h-full   flex items-center justify-center ">
-        <div className="flex flex-col items-start w-[80%] text-[1.2rem]">
-          <Title title1="Sobre Nosotros" title2="Nosotros " align="start" color="#f3f3f3" />
-               <br />
+        <div className="flex flex-col items-start w-[80%] text-[1.2rem] ">
+          <Title
+            title1="Sobre Nosotros"
+            title2="Nosotros "
+            align="start"
+            color="text-primary text-opacity-20"
+          />
+          <br />
           <p className="pr-[10%]">
             Somos más que una consultora de software;{" "}
             <strong>
