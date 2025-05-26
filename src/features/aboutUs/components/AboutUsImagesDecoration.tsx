@@ -32,6 +32,11 @@ export const AboutUsImagesDecoration = () => {
         verticalPositionClass="top-[10vh]"
         horizontalPositionClass="left-[0vw]"
       />
+
+
+       
+
+
     </>
   );
 };

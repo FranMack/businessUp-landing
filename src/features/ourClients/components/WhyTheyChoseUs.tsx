@@ -5,7 +5,6 @@ const slogans = [
   "Tecnología y creatividad en un solo lugar.",
   "Compromiso total con tus objetivos.",
   "Estrategias digitales que funcionan.",
-
 ];
 
 export const WhyTheyChoseUs = () => {
@@ -19,7 +18,7 @@ export const WhyTheyChoseUs = () => {
           return (
             <div
               key={item}
-              className="bg-primary bg-opacity-80 rounded-full text-[#ffff] text-[1.1rem]  p-4"
+              className="bg-primary bg-opacity-80 rounded-full text-[#ffff] text-[1.1rem] p-4 hover hover:bg-secondary hover:bg-opacity-70 transition-colors duration-1000"
             >
               {item}
             </div>

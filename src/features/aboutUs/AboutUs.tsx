@@ -40,7 +40,7 @@ export const AboutUs = () => {
         <figure className="absolute w-[50%] h-[60%]  right-5">
           <Image
             fill
-            className="w-full  object-cover"
+            className="w-full  object-cover drop-shadow-lg"
             src="/about-us-images/about_us_image.webp"
             alt="background"
           />

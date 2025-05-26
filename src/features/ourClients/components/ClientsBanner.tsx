@@ -11,7 +11,7 @@ const clients = [
 
 export const ClientsBanner = () => {
   return (
-    <div className="w-[80%] h-[6vh]  mx-auto">
+    <div className="w-[80%] h-[7vh]  mx-auto ">
       <Marquee
         speed={40}
         gradient={true}
@@ -26,7 +26,7 @@ export const ClientsBanner = () => {
               <Image
                 width={200}
                 height={100}
-                className="h-full l object-cover object-center"
+                className="h-full object-cover object-center"
                 src={item.path}
                 alt="decoration image"
               />

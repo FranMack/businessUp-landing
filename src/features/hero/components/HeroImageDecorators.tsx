@@ -47,6 +47,8 @@ export const HeroImageDecorators = () => {
         verticalPositionClass="top-[16vh]"
         horizontalPositionClass="right-5"
       />
+
+  
     </>
   );
 };

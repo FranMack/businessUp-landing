@@ -25,7 +25,7 @@ export const Navbar = () => {
   return (
     <nav
       className={`fixed z-50 w-screen h-[10vh] flex justify-between px-[5%] ${
-        scrollPosition > 100 ? "bg-[#ffff]" : ""
+        scrollPosition > 100 ? "bg-[#ffff] shadow-lg" : ""
       }`}
     >
       <figure className="w-[12%] relative">
