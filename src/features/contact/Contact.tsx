@@ -1,11 +1,14 @@
 import Image from "next/image";
-import { FacebookIcon, InstagramIcon, TwitterIcon } from "../../app/utils";
 import { Title } from "../commons/Title";
 import { ContactForm } from "./components/ContactForm";
+import { SocialMedia } from "./components/Social Media";
 
 export const Contact = () => {
   return (
-    <section id="contact" className="w-screen xs:min-h-screen lg:h-screen relative flex xs:flex-col lg:flex-row ">
+    <section
+      id="contact"
+      className="w-screen xs:min-h-screen lg:h-screen relative flex xs:flex-col lg:flex-row "
+    >
       <div className="xs:full lg:w-1/2 xs:h-fit  lg:h-full  z-10 flex flex-col justify-center items-center">
         <div className="flex flex-col justify-evenly items-start  w-[80%] h-full  text-[1.2rem]">
           <div>
@@ -35,11 +38,7 @@ export const Contact = () => {
 
             <div className="w-full">
               <strong>Redes Sociales</strong>
-              <div className="h-[3vh] w-full flex gap-x-[1vw] mt-[1vh]">
-                <InstagramIcon color="#693f91" />
-                <FacebookIcon color="#693f91" />
-                <TwitterIcon color="#693f91" />
-              </div>
+              <SocialMedia />
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { MenuMobileContextProvider } from "@/context/mobileMenu.context";
 import type { Metadata } from "next";
 import { ToastContainer } from "react-toastify";
-import { MobileMenu, Navbar, WhatsUpButton } from "../features";
+import { Footer, MobileMenu, Navbar, WhatsUpButton } from "../features";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -53,8 +53,9 @@ export default function RootLayout({
           <WhatsUpButton />
           <ToastContainer style={{ fontSize: "1rem" }} />
 
-          {children}
         </MenuMobileContextProvider>
+          {children}
+          <Footer/>
       </body>
     </html>
   );

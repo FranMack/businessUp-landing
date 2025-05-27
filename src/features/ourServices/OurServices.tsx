@@ -7,7 +7,7 @@ export const OurServices = () => {
   return (
     <section
       id="ourServices"
-      className="w-screen min-h-screen relative flex flex-col items-center pt-[10vh] bg-lightGray"
+      className="w-screen min-h-screen relative flex flex-col items-center lg:pt-[10vh] bg-lightGray"
     >
       <Title
         title1="Nuestros Servicios"

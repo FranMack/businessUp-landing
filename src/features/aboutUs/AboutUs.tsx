@@ -42,7 +42,7 @@ export const AboutUs = () => {
             width={1000}
             height={500}
             className="w-full  object-cover drop-shadow-lg"
-            src="/about-us-images/about_us_image.webp"
+            src="/about-us-images/notebook.webp"
             alt="background"
           />
         </figure>

@@ -20,7 +20,7 @@ export const WebNavbar = () => {
         scrollPosition > 100 ? "bg-[#ffff] shadow-lg" : ""
       }`}
     >
-      <figure className="w-[12%] relative">
+      <Link href="/#home" className="w-[12%] relative">
         <Image
           fill
           className="w-full object-contain absolute"
@@ -31,7 +31,7 @@ export const WebNavbar = () => {
           }`}
           alt="background"
         />
-      </figure>
+      </Link>
 
       <ul
         className={`flex items-center gap-x-[2vw] ${

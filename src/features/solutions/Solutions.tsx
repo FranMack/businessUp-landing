@@ -42,7 +42,7 @@ export const Solutions = () => {
           title2="Soluciones"
           align="center"
         />
-        <figure className="absolute h-[100%] w-[22%] right-0 botton-0">
+        <figure className="absolute lg:h-[93%] xs:w-[40%] lg:w-[22%] right-0 botton-0 ">
           <Image
             width={2000}
             height={500}
@@ -52,7 +52,7 @@ export const Solutions = () => {
           />
         </figure>
 
-        <figure className="absolute bottom-0 h-full w-full z-[-1] overflow-hidden">
+        <figure className="absolute bottom-0 xs:h-full lg:h-[93%] w-full z-[-1] overflow-hidden">
           <Image
             width={2000}
             height={500}
@@ -62,8 +62,8 @@ export const Solutions = () => {
           />
         </figure>
 
-        <div className="h-[80%] w-[90%] flex mt-[8vh] ">
-          <div className="w-1/3 h-full  flex flex-col items-center text-center ">
+        <div className=" xs:h-[60%] lg:h-[80%] w-[90%] flex justify-center mt-[8vh] relative ">
+               <div className="xs:w-full lg:w-1/3 h-fit  flex flex-col items-center text-center absolute left-0 xs:bottom-0 lg:bottom-auto ">
             <div
               className={`transition-all duration-700 ease-in-out transform ${
                 focus === "desarrollos"
@@ -81,11 +81,9 @@ export const Solutions = () => {
               </p>
             </div>
           </div>
+          <SolutionCenter />
 
-          <div className="w-1/3 h-full flex flex-col justify-between items-center  ">
-            <SolutionCenter />
-
-            <div className="w-full h-fit  flex flex-col items-center text-center">
+           <div className=" xs:w-full lg:w-1/3 h-fit  flex flex-col items-center text-center absolute bottom-0">
               <div
                 className={`transition-all duration-700 ease-in-out transform ${
                   focus === "clientes"
@@ -104,27 +102,25 @@ export const Solutions = () => {
                 </p>
               </div>
             </div>
-          </div>
 
-          <div className="w-1/3 h-full flex flex-col items-center text-center">
-             <div
+               <div className="xs:w-full lg:w-1/3 h-fit  flex flex-col items-center text-center absolute right-0 xs:bottom-0 lg:bottom-auto">
+            <div
               className={`transition-all duration-700 ease-in-out transform ${
                 focus === "procesos"
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 -translate-y-5 pointer-events-none absolute"
               }`}
             >
-                <h3 className="text-primary text-[2rem] font-semibold">
-                  Arquitectura operativa
-                </h3>
-                <p className="px-[14%]">
-                  Innovación que funciona y además se percibe. Convertimos
-                  inversiones tecnológicas en avances visibles, comprensibles y
-                  alineados con los objetivos de quienes lideran y de quienes
-                  evalúan resultados.
-                </p>
-              </div>
-       
+              <h3 className="text-primary text-[2rem] font-semibold">
+                Arquitectura operativa
+              </h3>
+              <p className="px-[14%]">
+                Innovación que funciona y además se percibe. Convertimos
+                inversiones tecnológicas en avances visibles, comprensibles y
+                alineados con los objetivos de quienes lideran y de quienes
+                evalúan resultados.
+              </p>
+            </div>
           </div>
         </div>
       </section>

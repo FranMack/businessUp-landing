@@ -10,3 +10,4 @@ export { Solutions } from "./solutions/Solutions";
 export { MobileMenu } from "./ui/MobileMenu";
 export { MobileNavbar } from "./ui/MobileNavbar";
 export { Navbar } from "./ui/Navbar";
+export { Footer } from "./ui/Footer";

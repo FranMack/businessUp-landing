@@ -10,8 +10,10 @@ import { FormValues } from "../interface/contact.interfaces";
 import { ContactService } from "../service/contact.service";
 import { ContactInput } from "./ContactInput";
 import { ContactTextArea } from "./ContactTextArea";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export const ContactForm = () => {
+  const refContactForm = useScrollAnimation<HTMLFormElement>("efectoReveal");
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const initialValue: FormValues = {
@@ -83,6 +85,7 @@ export const ContactForm = () => {
     >
       {(formik) => (
         <Form
+          ref={refContactForm!}
           onSubmit={formik.handleSubmit}
           className=" xs:w-[80%] lg:w-[65%] bg-gradient-soft flex flex-col gap-y-[1vh] items-center rounded-xl py-[5%] custom-shadow"
         >
@@ -107,3 +110,6 @@ export const ContactForm = () => {
     </Formik>
   );
 };
+function useScrollReveal<T>(arg0: string) {
+  throw new Error("Function not implemented.");
+}

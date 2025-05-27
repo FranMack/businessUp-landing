@@ -8,13 +8,13 @@ export const SolutionCenter = () => {
 
   const { focus, handleFocus } = context;
   return (
-    <div className="w-[20vw] h-[20vw] mt-[3vh] flex justify-center border border-primary rounded-full relative border-dashed">
+    <div className="xs:w-[60vw] xs:h-[60vw] lg:w-[20vw] lg:h-[20vw] mt-[3vh] flex justify-center border border-primary rounded-full relative border-dashed">
       <div
         onMouseEnter={() => {
           handleFocus("desarrollos");
         }}
      
-        className={`group w-[8vw] h-[8vw]   ${
+        className={`group xs:w-[20vw] xs:h-[20vw] lg:w-[8vw] lg:h-[8vw]   ${
           focus === "desarrollos" ? "bg-primary" : "bg-[#ffff]"
         } transition-colors duration-1000"  border border-primary rounded-full absolute left-[-2vw] flex items-center`}
       >
@@ -23,7 +23,7 @@ export const SolutionCenter = () => {
             focus === "desarrollos" ? "fill-[#ffff]" : "fill-[#693f91"
           } transition-colors duration-1000 `}
         />
-        <p className="absolute left-[-6vw] text-[1.1rem] font-semibold">
+        <p className="absolute xs:top-[-5vh] lg:top-auto left-[-6vw] text-[1.1rem] font-semibold">
           Desarrollos
         </p>
       </div>
@@ -32,7 +32,7 @@ export const SolutionCenter = () => {
           handleFocus("procesos");
         }}
       
-        className={`group w-[8vw] h-[8vw] ${
+        className={`group xs:w-[20vw] xs:h-[20vw] lg:w-[8vw] lg:h-[8vw] ${
           focus === "procesos" ? "bg-primary" : "bg-[#ffff]"
         } transition-colors duration-1000 border  border-primary rounded-full absolute right-[-2vw] flex items-center `}
       >
@@ -41,7 +41,7 @@ export const SolutionCenter = () => {
             focus === "procesos" ? "fill-[#ffff]" : "fill-[#693f91]"
           } transition-colors duration-1000`}
         />
-        <p className="absolute right-[-6vw] text-[1.1rem] font-semibold">
+        <p className="absolute xs:top-[-5vh] lg:top-auto right-[-6vw] text-[1.1rem] font-semibold">
           Procesos
         </p>
       </div>
@@ -51,7 +51,7 @@ export const SolutionCenter = () => {
           handleFocus("clientes");
         }}
      
-        className={`group w-[8vw] h-[8vw] ${
+        className={`group xs:w-[20vw] xs:h-[20vw] lg:w-[8vw] lg:h-[8vw] ${
           focus === "clientes" ? "bg-primary" : "bg-[#ffff]"
         } transition-colors duration-1000 border bg-[#ffff] border-primary rounded-full absolute  bottom-[-3vw] flex items-center justify-center`}
       >
@@ -60,7 +60,7 @@ export const SolutionCenter = () => {
             focus === "clientes" ? "fill-[#ffff]" : "fill-[#693f91]"
           } transition-colors duration-1000`}
         />
-        <p className="absolute bottom-[-2vw] text-[1.1rem] font-semibold">
+        <p className="absolute xs:bottom-[-8vw] lg:bottom-[-2vw] text-[1.1rem] font-semibold">
           Clientes
         </p>
       </div>
