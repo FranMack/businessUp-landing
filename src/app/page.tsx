@@ -9,7 +9,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="w-screen min-h-scree ">
+    <main className="w-screen min-h-screen overflow-x-hidden ">
       <Hero />
       <Solutions />
       <OurServices />

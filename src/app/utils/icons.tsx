@@ -1,8 +1,9 @@
 interface PlayOptions {
   onClick?: () => void;
+  color?:string
 }
 
-export function FacebookIcon({ onClick }: PlayOptions) {
+export function FacebookIcon({ onClick,color="#ffff" }: PlayOptions) {
   return (
     <svg
       onClick={onClick}
@@ -26,7 +27,7 @@ export function FacebookIcon({ onClick }: PlayOptions) {
         <g
           id="Dribbble-Light-Preview"
           transform="translate(-385.000000, -7399.000000)"
-          fill="#ffff"
+     fill={color}
         >
           <g id="icons" transform="translate(56.000000, 160.000000)">
             <path
@@ -40,7 +41,7 @@ export function FacebookIcon({ onClick }: PlayOptions) {
   );
 }
 
-export function InstagramIcon({ onClick }: PlayOptions) {
+export function InstagramIcon({ onClick,color="#ffff" }: PlayOptions) {
   return (
     <svg
       onClick={onClick}
@@ -64,7 +65,7 @@ export function InstagramIcon({ onClick }: PlayOptions) {
         <g
           id="Dribbble-Light-Preview"
           transform="translate(-340.000000, -7439.000000)"
-          fill="#ffff"
+          fill={color}
         >
           <g id="icons" transform="translate(56.000000, 160.000000)">
             <path
@@ -78,7 +79,7 @@ export function InstagramIcon({ onClick }: PlayOptions) {
   );
 }
 
-export function TwitterIcon({ onClick }: PlayOptions) {
+export function TwitterIcon({ onClick,color }: PlayOptions) {
   return (
     <svg
       onClick={onClick}
@@ -102,7 +103,7 @@ export function TwitterIcon({ onClick }: PlayOptions) {
         <g
           id="Dribbble-Light-Preview"
           transform="translate(-60.000000, -7521.000000)"
-          fill="#ffff"
+        fill={color}
         >
           <g id="icons" transform="translate(56.000000, 160.000000)">
             <path

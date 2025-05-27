@@ -1,10 +1,12 @@
 export { AboutUs } from "./aboutUs/AboutUs";
+export { ImageDecoration } from "./commons/ImageDecoration";
 export { Title } from "./commons/Title";
+export { WhatsUpButton } from "./commons/WhatsUpButton";
 export { Contact } from "./contact/Contact";
 export { Hero } from "./hero/Hero";
+export { OurClients } from "./ourClients/OurClients";
 export { OurServices } from "./ourServices/OurServices";
 export { Solutions } from "./solutions/Solutions";
+export { MobileMenu } from "./ui/MobileMenu";
+export { MobileNavbar } from "./ui/MobileNavbar";
 export { Navbar } from "./ui/Navbar";
-export { WhatsUpButton } from "./commons/WhatsUpButton";
-export { OurClients } from "./ourClients/OurClients";
-export { ImageDecoration } from "./commons/ImageDecoration";

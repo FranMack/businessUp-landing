@@ -33,7 +33,7 @@ export const Solutions = () => {
     <Provider value={proviverValue}>
       <section
         id="solutions"
-        className="w-screen h-screen relative flex flex-col justify-center items-center "
+        className="w-screen h-screen relative flex flex-col justify-center items-center bf- "
       >
         <SolutionsImageDecorators />
         <Title
@@ -56,7 +56,7 @@ export const Solutions = () => {
           <Image
             width={2000}
             height={500}
-            className="w-full object-cover"
+            className="w-full xs:h-full lg:h-fit object-cover"
             src="/soluciones-images/gray_backround.webp"
             alt="background"
           />

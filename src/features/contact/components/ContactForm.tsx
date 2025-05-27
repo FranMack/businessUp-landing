@@ -84,7 +84,7 @@ export const ContactForm = () => {
       {(formik) => (
         <Form
           onSubmit={formik.handleSubmit}
-          className="w-[65%] bg-gradient-soft flex flex-col gap-y-[1vh] items-center rounded-xl py-[5%] custom-shadow"
+          className=" xs:w-[80%] lg:w-[65%] bg-gradient-soft flex flex-col gap-y-[1vh] items-center rounded-xl py-[5%] custom-shadow"
         >
           <ContactInput label="Nombre" name="name" type="text" />
           <ContactInput label="Email" name="email" type="text" />
@@ -94,7 +94,7 @@ export const ContactForm = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className="mt-[2vh] w-[70%] h-[6vh] bg-primary rounded-xl text-[#ffff] font-semibold"
+            className="mt-[2vh] xs:w-[80%] lg:w-[70%] h-[6vh] bg-primary rounded-xl text-[#ffff] font-semibold"
           >
             {isLoading ? (
               <BeatLoader color={"white"} speedMultiplier={0.4} />

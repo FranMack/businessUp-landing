@@ -1,7 +1,7 @@
+import { MenuMobileContextProvider } from "@/context/mobileMenu.context";
 import type { Metadata } from "next";
-import { Navbar, WhatsUpButton } from "../features";
-
 import { ToastContainer } from "react-toastify";
+import { MobileMenu, Navbar, WhatsUpButton } from "../features";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -47,11 +47,14 @@ export default function RootLayout({
       <link rel="icon" href="/short_logo.jpg" />
       <link rel="canonical" href="https://businessup.com.ar/" />
       <body className={`antialiased`}>
-        <Navbar />
-        <WhatsUpButton />
-        <ToastContainer style={{ fontSize: "1rem" }} />
+        <MenuMobileContextProvider>
+          <Navbar />
+          <MobileMenu />
+          <WhatsUpButton />
+          <ToastContainer style={{ fontSize: "1rem" }} />
 
-        {children}
+          {children}
+        </MenuMobileContextProvider>
       </body>
     </html>
   );
