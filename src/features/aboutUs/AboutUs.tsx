@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { Title } from "../commons/Title";
 import { AboutUsImagesDecoration } from "./components/AboutUsImagesDecoration";
+import { AboutUsPrincipalImage } from "./components/AboutUsPrincipalImage";
 
 export const AboutUs = () => {
   return (
@@ -37,15 +37,7 @@ export const AboutUs = () => {
         </div>
       </div>
       <div className=" xs:w-full lg:w-1/2 lg:h-full flex items-center justify-center  ">
-        <figure className=" xs:w-full lg:full lg:right-5 ">
-          <Image
-            width={1000}
-            height={500}
-            className="w-full  object-cover drop-shadow-lg"
-            src="/about-us-images/notebook.webp"
-            alt="background"
-          />
-        </figure>
+        <AboutUsPrincipalImage />
       </div>
     </section>
   );

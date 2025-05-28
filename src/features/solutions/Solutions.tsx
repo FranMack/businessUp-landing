@@ -33,7 +33,7 @@ export const Solutions = () => {
     <Provider value={proviverValue}>
       <section
         id="solutions"
-        className="w-screen h-screen relative flex flex-col justify-center items-center bf- "
+        className="w-screen h-screen relative flex flex-col justify-center items-center "
       >
         <SolutionsImageDecorators />
         <Title

@@ -1,1 +1,5 @@
-export { FacebookIcon, InstagramIcon, Linkedin as TwitterIcon } from "./icons";
+export {
+  FacebookIcon,
+  InstagramIcon,
+  LinkedinIcon,
+} from "./icons";

@@ -1,7 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Title } from "../commons/Title";
 import { ContactForm } from "./components/ContactForm";
-import { SocialMedia } from "./components/Social Media";
+import { SocialMedia } from "../commons/Social Media";
 
 export const Contact = () => {
   return (
@@ -27,18 +28,29 @@ export const Contact = () => {
             <strong className="text-[1.6rem]">Te escuchamos!</strong>
           </div>
           <div className=" xs:text-primary lg:text-[#ffff] flex flex-col gap-y-[2vh]">
-            <div>
+            <div className="flex flex-col">
               <strong>Email</strong>
-              <p>clientes@businessup.com.ar</p>
+              <Link href="mailto:clientes@businessup.com.ar">
+                clientes@businessup.com.ar
+              </Link>
             </div>
-            <div>
+
+            <div className="flex flex-col">
               <strong>WhatsApp</strong>
-              <p>+54 9 11 2329 - 4642</p>
+              <Link
+                href="https://wa.me/5491123294642"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                +54 9 11 2329 - 4642
+              </Link>
             </div>
 
             <div className="w-full">
               <strong>Redes Sociales</strong>
-              <SocialMedia />
+              <div className="h-[3vh] w-full flex  items-center  xs:gap-x-[3vw] lg:gap-x-[1vw] mt-[1vh]">
+                <SocialMedia />
+              </div>
             </div>
           </div>
         </div>

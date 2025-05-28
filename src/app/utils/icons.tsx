@@ -79,7 +79,7 @@ export function InstagramIcon({ onClick, color = "#ffff" }: PlayOptions) {
   );
 }
 
-export function Linkedin({ onClick, color = "#ffff"  }: PlayOptions) {
+export function LinkedinIcon({ onClick, color = "#ffff" }: PlayOptions) {
   return (
     <svg
       onClick={onClick}
@@ -112,7 +112,7 @@ export function Linkedin({ onClick, color = "#ffff"  }: PlayOptions) {
           <g
             id="Dribbble-Light-Preview"
             transform="translate(-180.000000, -7479.000000)"
-         fill={color}
+            fill={color}
           >
             {" "}
             <g id="icons" transform="translate(56.000000, 160.000000)">

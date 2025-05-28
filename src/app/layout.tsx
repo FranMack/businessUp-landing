@@ -44,18 +44,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="icon" href="/short_logo.jpg" />
-      <link rel="canonical" href="https://businessup.com.ar/" />
+      <head>
+        <link rel="icon" href="/favicon.png" />
+        <link rel="canonical" href="https://businessup.com.ar/" />
+      </head>
+
       <body className={`antialiased`}>
         <MenuMobileContextProvider>
           <Navbar />
           <MobileMenu />
           <WhatsUpButton />
           <ToastContainer style={{ fontSize: "1rem" }} />
-
         </MenuMobileContextProvider>
-          {children}
-          <Footer/>
+        {children}
+        <Footer />
       </body>
     </html>
   );

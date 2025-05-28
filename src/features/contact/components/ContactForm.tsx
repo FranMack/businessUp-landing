@@ -1,5 +1,6 @@
 "use client";
 
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Form, Formik } from "formik";
 import { useState } from "react";
 import BeatLoader from "react-spinners/BeatLoader";
@@ -10,7 +11,6 @@ import { FormValues } from "../interface/contact.interfaces";
 import { ContactService } from "../service/contact.service";
 import { ContactInput } from "./ContactInput";
 import { ContactTextArea } from "./ContactTextArea";
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 export const ContactForm = () => {
   const refContactForm = useScrollAnimation<HTMLFormElement>("efectoReveal");
@@ -97,7 +97,7 @@ export const ContactForm = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className="mt-[2vh] xs:w-[80%] lg:w-[70%] h-[6vh] bg-primary rounded-xl text-[#ffff] font-semibold"
+            className="mt-[2vh] xs:w-[80%] lg:w-[70%] h-[6vh] bg-primary rounded-xl text-[#ffff] font-semibold hover hover:bg-secondary  duration-700 transition-colors"
           >
             {isLoading ? (
               <BeatLoader color={"white"} speedMultiplier={0.4} />
@@ -110,6 +110,3 @@ export const ContactForm = () => {
     </Formik>
   );
 };
-function useScrollReveal<T>(arg0: string) {
-  throw new Error("Function not implemented.");
-}

@@ -1,9 +1,9 @@
 "use client";
-import { FacebookIcon, InstagramIcon, TwitterIcon } from "@/app/utils";
 import { MenuMobileContext } from "@/context/mobileMenu.context";
 import Link from "next/link";
 import { useContext } from "react";
 import { IoMdClose } from "react-icons/io";
+import { SocialMedia } from "../commons/Social Media";
 
 export const MobileMenu = () => {
   const navList = [
@@ -14,10 +14,10 @@ export const MobileMenu = () => {
     { title: "Contacto", url: "/#contact" },
   ];
 
-const {menuMobileOpen,toggleMenuMobile}=useContext(MenuMobileContext)
+  const { menuMobileOpen, toggleMenuMobile } = useContext(MenuMobileContext);
   return (
     <>
-   <div
+      <div
         onClick={toggleMenuMobile}
         className={`top-0 w-screen h-[100vh] fixed z-50 ${
           menuMobileOpen ? "translate-x-0" : "translate-x-[100vw]"
@@ -29,7 +29,9 @@ const {menuMobileOpen,toggleMenuMobile}=useContext(MenuMobileContext)
         } right-0 transition-transform duration-1000`}
       >
         <IoMdClose
-          onClick={() => {toggleMenuMobile()}}
+          onClick={() => {
+            toggleMenuMobile();
+          }}
           className="absolute top-0 right-0 text-[1.5rem] text-[#693f91]"
         />
 
@@ -40,8 +42,13 @@ const {menuMobileOpen,toggleMenuMobile}=useContext(MenuMobileContext)
           {navList.map((item) => {
             return (
               <Link
-                onClick={() => {toggleMenuMobile()}}
-               className="relative" key={item.title} href={item.url}>
+                onClick={() => {
+                  toggleMenuMobile();
+                }}
+                className="relative"
+                key={item.title}
+                href={item.url}
+              >
                 {item.title}
               </Link>
             );
@@ -49,12 +56,9 @@ const {menuMobileOpen,toggleMenuMobile}=useContext(MenuMobileContext)
         </ul>
         <hr className="w-[80%] border-b-1 border-primary" />
         <div className="w-full h-[3.5vh]  flex justify-center items-center gap-x-[5vw] my-[5vh]">
-          <InstagramIcon color="#693f91" />
-          <FacebookIcon color="#693f91" />
-          <TwitterIcon color="#693f91" />
+          <SocialMedia />
         </div>
       </div>
-   </>
+    </>
   );
 };
-

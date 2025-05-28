@@ -1,5 +1,6 @@
 export { AboutUs } from "./aboutUs/AboutUs";
 export { ImageDecoration } from "./commons/ImageDecoration";
+export { SocialMedia } from "./commons/Social Media";
 export { Title } from "./commons/Title";
 export { WhatsUpButton } from "./commons/WhatsUpButton";
 export { Contact } from "./contact/Contact";

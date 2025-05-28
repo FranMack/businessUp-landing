@@ -98,3 +98,19 @@ body{
     opacity: 1;
   }
 }
+
+
+@keyframes rotateInFade {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.animate-rotate-in-fade {
+  animation: rotateInFade 2s ease-out forwards;
+}

@@ -1,3 +1,5 @@
+"use client";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
@@ -10,8 +12,9 @@ const clients = [
 ];
 
 export const ClientsBanner = () => {
+   const refBanner = useScrollAnimation<HTMLDivElement>("efectoReveal");
   return (
-    <div className="w-[80%] h-[7vh]  mx-auto ">
+    <div ref={refBanner} className="w-[80%] h-[7vh]  mx-auto ">
       <Marquee
         speed={40}
         gradient={true}
