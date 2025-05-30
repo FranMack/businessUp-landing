@@ -19,7 +19,7 @@ export const ourServicesData = [
     paragraph1:
       "Implementamos nuestra “Plataforma de Atención al Cliente con IA”, totalmente integrada con tu sistema de gestión con una interfaz humanizada, diseñada con personajes únicos para tu marca, que permite:",
     paragraph2:
-      "Consultar facturas, levantar reclamos, iniciar trámites.Informar el estado de servicios en tiempo real Derivar a operadores humanos Contar tus logros y gestiones sobresalientes, entre muchas opciones más.",
+      "Consultar facturas, levantar reclamos, iniciar trámites. Informar el estado de servicios en tiempo real Derivar a operadores humanos Contar tus logros y gestiones sobresalientes, entre muchas opciones más.",
     image: service_2,
   },
   {

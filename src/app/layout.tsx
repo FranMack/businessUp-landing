@@ -1,5 +1,5 @@
 import { MenuMobileContextProvider } from "@/context/mobileMenu.context";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { ToastContainer } from "react-toastify";
 import { Footer, MobileMenu, Navbar, WhatsUpButton } from "../features";
 import "./globals.css";
@@ -32,9 +32,12 @@ export const metadata: Metadata = {
     images: "https://businessup.com.ar/logo_original.webp",
   },
 
-  viewport: "width=device-width, initial-scale=1.0",
-
   authors: [{ name: "Business Up", url: "https://businessup.com.ar/" }],
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
 };
 
 export default function RootLayout({

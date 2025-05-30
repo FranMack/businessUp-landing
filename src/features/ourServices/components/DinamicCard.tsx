@@ -35,6 +35,7 @@ export const DinamicServiceCard = ({
           <h3 className="text-primary xs:text-[1.6rem] lg:text-[1.8rem] font-semibold text-center mt-[1vh]">
             {title}
           </h3>
+          <small className="absolute bottom-3 right-5 text-primary font-semibold">Ver más</small>
         </div>
 
         {/* Back */}

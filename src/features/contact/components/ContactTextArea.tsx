@@ -4,7 +4,7 @@ interface Props {
   label: string;
   name: string;
   placeHolder?: string;
-  [x: string]: any;
+  [x: string]: unknown;
 }
 
 export const ContactTextArea = ({ label, ...props }: Props) => {
@@ -16,7 +16,7 @@ export const ContactTextArea = ({ label, ...props }: Props) => {
           {label}
         </label>
         <textarea
-          className="w-[100%] h-[12vh] pl-[2%] border-[1px]"
+          className="w-[100%] xs:h-[12vh] sm:h-[18vh] lg:h-[12vh] pl-[2%] border-[1px]"
           style={{ borderColor: `${meta.touched && meta.error ? "red" : ""}` }}
           {...field}
           {...props}

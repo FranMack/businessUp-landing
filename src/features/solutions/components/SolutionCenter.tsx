@@ -11,7 +11,7 @@ export const SolutionCenter = () => {
 
   const { focus, handleFocus } = context;
   return (
-    <div ref={refSolutionGraph} className="xs:w-[60vw] xs:h-[60vw] lg:w-[20vw] lg:h-[20vw] mt-[2vh] flex justify-center border border-primary rounded-full relative border-dashed">
+    <div ref={refSolutionGraph} className="xs:hidden lg:flex justify-center xs:w-[60vw] xs:h-[60vw] lg:w-[20vw] lg:h-[20vw] mt-[2vh]  border border-primary rounded-full relative border-dashed">
       <div
         onMouseEnter={() => {
           handleFocus("desarrollos");

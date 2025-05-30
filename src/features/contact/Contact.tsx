@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { SocialMedia } from "../commons/Social Media";
 import { Title } from "../commons/Title";
 import { ContactForm } from "./components/ContactForm";
-import { SocialMedia } from "../commons/Social Media";
 
 export const Contact = () => {
   return (
@@ -20,7 +20,7 @@ export const Contact = () => {
               color="text-primary text-opacity-20"
             />
             <br />
-            <p className="xs:text-[1rem] pr-[10%]">
+            <p className="xs:text-[1rem] lg:text-[1.2rem] pr-[10%] text-primary font-semibold">
               ¿Estás listo para transformar a tu empresa y ser el líder que
               siempre quisiste ser?
             </p>
@@ -48,7 +48,7 @@ export const Contact = () => {
 
             <div className="w-full">
               <strong>Redes Sociales</strong>
-              <div className="h-[3vh] w-full flex  items-center  xs:gap-x-[3vw] lg:gap-x-[1vw] mt-[1vh]">
+              <div className="xs:h-[3vh] sm:h-[6vh] lg:h-[3vh] w-full flex  items-center  xs:gap-x-[3vw] lg:gap-x-[1vw] mt-[1vh]">
                 <SocialMedia />
               </div>
             </div>

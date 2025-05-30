@@ -14,7 +14,7 @@ const clients = [
 export const ClientsBanner = () => {
    const refBanner = useScrollAnimation<HTMLDivElement>("efectoReveal");
   return (
-    <div ref={refBanner} className="w-[80%] h-[7vh]  mx-auto ">
+    <div ref={refBanner} className="w-[80%] xs:h-[7vh] sm:h-[12vh] lg:h-[7vh]  mx-auto ">
       <Marquee
         speed={40}
         gradient={true}

@@ -6,6 +6,7 @@ export function useScrollPosition() {
 
   useEffect(() => {
     function sizeHandler() {
+      if (typeof window === "undefined") return;
       setScrolPosition(window.scrollY);
     }
 
@@ -13,6 +14,5 @@ export function useScrollPosition() {
     return window.addEventListener("scroll", sizeHandler);
   }, []);
 
-  return {scrollPosition}
+  return { scrollPosition };
 }
-

@@ -1,16 +1,16 @@
 import Image from "next/image";
 import { Title } from "../commons/Title";
 import { ClientsBanner } from "./components/ClientsBanner";
-import { WhyTheyChoseUs } from "./components/WhyTheyChoseUs";
 import { ClientsImageDecorators } from "./components/ClientsImageDecorators";
+import { OurStrenght } from "./components/OurStrenght";
 
 export const OurClients = () => {
   return (
     <section
       id="ourClients"
-      className="w-screen h-screen relative flex flex-col xs:gap-y-[2vh] lg:gap-y-[6vh] "
+      className="w-screen min-h-screen relative flex flex-col xs:gap-y-[5vh] lg:gap-y-[6vh]  "
     >
-      <ClientsImageDecorators/>
+      <ClientsImageDecorators />
       <div className=" xs:w-full lg:w-1/2 h-fit flex justify-center mt-[10vh]">
         <div className="w-[70%]">
           <Title
@@ -32,11 +32,8 @@ export const OurClients = () => {
         />
       </figure>
 
-    
       <ClientsBanner />
-
-  
-      <WhyTheyChoseUs />
+      <OurStrenght />
     </section>
   );
 };

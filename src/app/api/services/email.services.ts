@@ -35,7 +35,7 @@ export const sendEmail = async (options: SendMailOptions): Promise<boolean> => {
 
   try {
     await transporter.sendMail({
-      from: `Business Up <${envs.MAILER_EMAIL}>`,
+      from: `Business up Notifications <${envs.MAILER_EMAIL}>`,
       to: to,
       subject: subject,
       html: htmlBody,

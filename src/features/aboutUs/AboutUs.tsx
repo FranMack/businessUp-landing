@@ -6,7 +6,7 @@ export const AboutUs = () => {
   return (
     <section
       id="aboutUs"
-      className="w-screen h-screen relative flex xs:flex-col xs:justify-center xs:gap-y-[5vh] lg:flex-row bg-lightGray "
+      className="w-screen lg:h-screen relative flex xs:flex-col xs:justify-start xs:gap-y-[6vh] lg:flex-row bg-lightGray pt-[10vh] "
     >
       <AboutUsImagesDecoration />
       <div className="xs:w-full lg:w-1/2 xs:h-fit lg:h-full   flex items-center justify-center ">
