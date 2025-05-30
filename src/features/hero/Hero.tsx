@@ -15,7 +15,7 @@ export const Hero = () => {
         <div className=" h-full xs:w-full lg:w-1/2 flex justify-center items-center efectoReveal ">
           <div className="w-[80%] flex flex-col gap-y-[2vh]">
             <h1 className=" xs:text-[2.2rem] xs:leading-[2.5rem] lg:text-[3rem] lg:leading-normal font-semibold">
-              Tecnológia de vanguardia para líderes visionarios
+              Tecnología de vanguardia para líderes visionarios
             </h1>
             <h2 className=" xs:text-[1rem] lg:text-[1.1rem] pr-[10%]">
               Te ayudamos a pensar distinto, operar mejor y liderar con
