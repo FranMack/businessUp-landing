@@ -7,18 +7,26 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Business Up - Tecnología e Innovación para Líderes Visionarios",
   description:
-    "En Business Up impulsamos el crecimiento empresarial con soluciones tecnológicas de vanguardia. Automatizamos procesos, conectamos áreas y transformamos negocios con innovación palpable y resultados visibles.",
+    "Impulsa el crecimiento empresarial con soluciones tecnológicas innovadoras. Automatizamos procesos y conectamos áreas para transformar tu negocio con resultados visibles.",
   keywords:
-    "tecnología empresarial, innovación tecnológica, automatización, transformación digital, consultora tecnológica, soluciones tecnológicas, liderazgo empresarial, innovación para negocios, Business Up, visibilidad de gestión",
+    "tecnología empresarial, innovación tecnológica, automatización, transformación digital, consultoría tecnológica, soluciones tecnológicas, liderazgo empresarial, Business Up",
   robots: "index, follow",
+  themeColor: "#0070f3", // Ejemplo: color corporativo para navegadores
 
   // Open Graph Meta Tags
   openGraph: {
     title: "Business Up - Tecnología e Innovación para Líderes Visionarios",
     description:
       "Lidera tu industria con Business Up. Convertimos inversiones tecnológicas en avances visibles y soluciones que transforman la gestión y operación de tu negocio.",
-    images: "https://businessup.com.ar/logo_original.webp",
-    url: "https://businessup.com.ar/",
+    images: [
+      {
+        url: "https://business-up-landing.vercel.app/logo_original.webp",
+        width: 1200,
+        height: 630,
+        alt: "Logo Business Up",
+      },
+    ],
+    url: "https://business-up-landing.vercel.app/",
     type: "website",
     locale: "es_ES",
   },
@@ -28,13 +36,19 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Business Up - Tecnología e Innovación para Líderes Visionarios",
     description:
-      "Automatiza lo repetitivo y conecta cada área de tu negocio con tecnología que funciona y se percibe. Business Up, tu socio estratégico en innovación tecnológica.",
-    images: "https://businessup.com.ar/logo_original.webp",
+      "Automatiza procesos y conecta cada área de tu negocio con tecnología que funciona. Business Up, tu socio estratégico en innovación tecnológica.",
+    images: [
+      {
+        url: "https://business-up-landing.vercel.app/logo_original.webp",
+        alt: "Logo Business Up",
+      },
+    ],
   },
 
-  authors: [{ name: "Business Up", url: "https://businessup.com.ar/" }],
+  authors: [
+    { name: "Business Up", url: "https://business-up-landing.vercel.app/" },
+  ],
 };
-
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1.0,
@@ -49,7 +63,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.png" />
-        <link rel="canonical" href="https://businessup.com.ar/" />
+        <link rel="canonical" href="https://business-up-landing.vercel.app/" />
       </head>
 
       <body className={`antialiased`}>
