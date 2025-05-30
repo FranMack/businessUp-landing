@@ -20,7 +20,7 @@ export const metadata: Metadata = {
       "Lidera tu industria con Business Up. Convertimos inversiones tecnológicas en avances visibles y soluciones que transforman la gestión y operación de tu negocio.",
     images: [
       {
-        url: "https://business-up-landing.vercel.app/logo_original.webp",
+        url: "https://business-up-landing.vercel.app/favicon.png",
         width: 1200,
         height: 630,
         alt: "Logo Business Up",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
       "Automatiza procesos y conecta cada área de tu negocio con tecnología que funciona. Business Up, tu socio estratégico en innovación tecnológica.",
     images: [
       {
-        url: "https://business-up-landing.vercel.app/logo_original.webp",
+        url: "https://business-up-landing.vercel.app/favicon.png",
         alt: "Logo Business Up",
       },
     ],
