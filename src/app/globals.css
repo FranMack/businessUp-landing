@@ -173,3 +173,21 @@ body{
 
 
 
+.saludoReveal {
+  animation-name: saludoReveal;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+   animation-delay: 1s;
+}
+
+
+
+@keyframes saludoReveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

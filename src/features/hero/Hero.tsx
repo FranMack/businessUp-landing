@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { HeroImageDecorators } from "./components/HeroImageDecorators";
-export const Hero = () => {
+export const Hero = async () => {
+  
   return (
     <section id="hero" className="w-screen h-screen relative ">
       {<HeroImageDecorators />}

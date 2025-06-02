@@ -30,7 +30,7 @@ export const ClientsImageDecorators = () => {
         imagePath={"/ui/image_decorator_1.png"}
          heightClass={"xs:h-[6vh] lg:h-[8vh]"}
         widthClass={"xs:w-[12vh] lg:w-[16vh]"}
-        verticalPositionClass="top-[12vh]"
+        verticalPositionClass="xs:top-7 lg:top-[12vh]"
         horizontalPositionClass="left-[45vw]"
       />
       <ImageDecoration

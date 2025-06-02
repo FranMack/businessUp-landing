@@ -1,3 +1,5 @@
+"use client";
+import { useScreenSize } from "@/hooks/useScreenSize";
 import Image from "next/image";
 import { Title } from "../commons/Title";
 import { ClientsBanner } from "./components/ClientsBanner";
@@ -5,21 +7,20 @@ import { ClientsImageDecorators } from "./components/ClientsImageDecorators";
 import { OurStrenght } from "./components/OurStrenght";
 
 export const OurClients = () => {
+  const { screenWidth } = useScreenSize();
   return (
     <section
       id="ourClients"
       className="w-screen min-h-screen relative flex flex-col xs:gap-y-[5vh] lg:gap-y-[6vh]  "
     >
       <ClientsImageDecorators />
-      <div className=" xs:w-full lg:w-1/2 h-fit flex justify-center mt-[10vh]">
-        <div className="w-[70%]">
-          <Title
-            title1="Confián en nosotros"
-            title2="Clientes"
-            align="start"
-            color="text-primary text-opacity-20"
-          />
-        </div>
+      <div className=" xs:w-full h-fit flex xs:justify-center lg:justify-start mt-[10vh] lg:pl-[5%]">
+        <Title
+          title1="Que confían en nosotros"
+          title2="Clientes y Partners"
+          align={`${screenWidth > 1024 ? "start" : "center"}`}
+          color="text-primary text-opacity-20"
+        />
       </div>
 
       <figure className="absolute h-full w-full z-[-1] overflow-hidden botton-0 ">
