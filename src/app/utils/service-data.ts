@@ -6,7 +6,7 @@ import service_5 from "../../../public/services-images/service_5.webp";
 import service_6 from "../../../public/services-images/service_6.webp";
 
 export const ourServicesData = [
-   {
+  {
     title: "Software a medida",
     paragraph1:
       "Desarrollamos software con los últimos stacks tecnológicos, adaptándonos a tus necesidades y recursos con arquitectura sólida, código limpio y diseño impecable.",
@@ -19,14 +19,14 @@ export const ourServicesData = [
     paragraph1:
       "Implementamos nuestra “Plataforma de Atención al Cliente con IA”, totalmente integrada con tu sistema de gestión con una interfaz humanizada, diseñada con personajes únicos para tu marca, que permite:",
     paragraph2:
-      "Consultar facturas, levantar reclamos, iniciar trámites. Informar el estado de servicios en tiempo real Derivar a operadores humanos Contar tus logros y gestiones sobresalientes, entre muchas opciones más.",
+      "Consultar facturas, levantar reclamos, iniciar trámites, informar el estado de servicios en tiempo real, derivar a operadores humanos, contar tus logros y gestiones sobresalientes, entre muchas opciones más.",
     image: service_2,
   },
   {
     title: "Procesos",
-    paragraph1: "Te ayudamos a repensar tus procesos,optimizarlos y pulirlos:",
+    paragraph1: "Te ayudamos a repensar tus procesos, optimizarlos y pulirlos:",
     paragraph2:
-      "Relevamos, documentamos y presentamos propuestas de mejora con automatizaciones basadas en nuevas tecnologías para tus procesos,mejorando la performance de tu empresa.",
+      "Relevamos, documentamos y presentamos propuestas de mejora con automatizaciones basadas en nuevas tecnologías para tus procesos, mejorando la performance de tu empresa.",
     image: service_3,
   },
   {
@@ -42,7 +42,7 @@ export const ourServicesData = [
     paragraph1:
       "Los puntos de contacto con tus clientes en canales digitales y con tus empleados a través de tus sistemas de gestión, tienen un impacto en su forma de percibirte como líder.",
     paragraph2:
-      "Mejorar su experienia al interactuar con tu empresa o de llevar adelante gestiones internar, te permitirá ser un creador de tendencias.",
+      "Mejorar su experiencia al interactuar con tu empresa o llevar adelante gestiones internas, te permitirá ser un creador de tendencias.",
     image: service_5,
   },
   {
@@ -53,6 +53,4 @@ export const ourServicesData = [
       "Ya sea en redes sociales como en vía pública, tu estrategia tiene que estar alineada con tu visión innovadora.",
     image: service_6,
   },
-
- 
 ];

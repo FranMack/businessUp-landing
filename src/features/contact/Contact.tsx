@@ -8,7 +8,7 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-screen xs:min-h-screen lg:h-screen relative flex xs:flex-col lg:flex-row "
+      className="w-screen xs:min-h-screen lg:h-screen relative flex xs:flex-col lg:flex-row xs:pt-[10vh] lg:pt-0 "
     >
       <div className="xs:full lg:w-1/2 xs:h-fit  lg:h-full  z-10 flex flex-col justify-center items-center">
         <div className="flex flex-col justify-evenly items-start  w-[80%] h-full  text-[1.2rem]">

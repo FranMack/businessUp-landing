@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { HeroImageDecorators } from "./components/HeroImageDecorators";
 export const Hero = async () => {
-  
   return (
     <section id="hero" className="w-screen h-screen relative ">
       {<HeroImageDecorators />}
@@ -19,9 +18,8 @@ export const Hero = async () => {
               Tecnología de vanguardia para líderes visionarios
             </h1>
             <h2 className=" xs:text-[1rem] lg:text-[1.1rem] pr-[10%]">
-              Te ayudamos a pensar distinto, operar mejor y liderar con
+              Te ayudamos a pensar distinto, a operar mejor y a liderar con
               tecnología, para que te adelantes al cambio y ejecutes con
-  
               precisión.
             </h2>
             <h3 className="lg:mt-[3vh] xs:text-[1.15rem] lg:text-[1.3rem]">

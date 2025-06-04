@@ -6,14 +6,14 @@ export const AboutUsImagesDecoration = () => {
       <ImageDecoration
         imagePath={"/ui/image_decorator_1.png"}
         heightClass={"xs:h-[6vh] lg:h-[8vh]"}
-        widthClass={"xs:w-[12vh] lg:w-[16vh]"}
+        widthClass={"xs:w-[0vh] lg:w-[16vh]"}
         verticalPositionClass="bottom-0"
         horizontalPositionClass="left-[8vh]"
       />
       <ImageDecoration
         imagePath={"/ui/image_decorator_1.png"}
     heightClass={"xs:h-[6vh] lg:h-[8vh]"}
-        widthClass={"xs:w-[12vh] lg:w-[16vh]"}
+        widthClass={"xs:w-[0vh] lg:w-[16vh]"}
         verticalPositionClass="bottom-[16vh]"
         horizontalPositionClass="right-0"
       />

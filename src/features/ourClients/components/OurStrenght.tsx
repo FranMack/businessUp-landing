@@ -45,7 +45,7 @@ export const OurStrenght = () => {
   return (
     <div ref={refStrengthCard} className="w-full  flex flex-col gap-y-[2vh] ">
       <h3 className="xs:text-[1.5rem] xs:text-center lg:text-start lg:text-[2rem] font-semibold text-primary w-[85%] mx-auto">
-        ¿Por que nos eligen ?
+        ¿Por qué nos eligen ?
       </h3>
       <div className="xs:w-[80%] lg:w-[90%] h-full  grid xs:grid-flow-cols-1 lg:grid-cols-2 mx-auto gap-10 ">
         {whyTheyChooseUsData.map((item, i) => {
