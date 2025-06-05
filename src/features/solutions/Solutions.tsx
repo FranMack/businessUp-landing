@@ -53,7 +53,7 @@ export const Solutions = () => {
             width={2000}
             height={1000}
             className=" h-full object-contain "
-            src="/soluciones-images/ELEMENTO-04.png "
+            src="/soluciones-images/ELEMENTO-04.png"
             alt="background"
           />
         </figure>
