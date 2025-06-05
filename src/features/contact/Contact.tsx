@@ -20,7 +20,7 @@ export const Contact = () => {
               color="text-primary text-opacity-20"
             />
             <br />
-            <p className="xs:text-[1rem] lg:text-[1.2rem] pr-[10%] text-primary font-semibold">
+            <p className="xs:text-[1rem] md:text-[1.2rem] pr-[10%] text-primary font-semibold">
               ¿Estás listo para transformar a tu empresa y ser el líder que
               siempre quisiste ser?
             </p>
