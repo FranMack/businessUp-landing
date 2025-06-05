@@ -11,10 +11,10 @@ export const OurClients = () => {
   return (
     <section
       id="ourClients"
-      className="w-screen min-h-screen relative flex flex-col xs:gap-y-[5vh] lg:gap-y-[6vh]  "
+      className="w-screen min-h-screen relative flex flex-col justify-start xs:gap-y-[5vh] lg:gap-y-[8vh] "
     >
       <ClientsImageDecorators />
-      <div className=" xs:w-full h-fit flex xs:justify-center lg:justify-start mt-[10vh] lg:pl-[5%]">
+      <div className=" xs:w-full h-fit flex xs:justify-center lg:justify-start lg:pl-[5%] xs:mt-[10vh] lg:mt-[10vh]">
         <Title
           title1="Que confían en nosotros"
           title2="Clientes y Partners"

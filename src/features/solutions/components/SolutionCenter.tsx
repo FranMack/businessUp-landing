@@ -63,7 +63,7 @@ export const SolutionCenter = () => {
             focus === "clientes" ? "fill-[#ffff]" : "fill-[#693f91]"
           } transition-colors duration-1000`}
         />
-        <p className="absolute xs:top-[-5vh] lg:top-auto right-[-6vw] text-[1.1rem] font-semibold">
+        <p className="absolute xs:top-[-5vh] lg:top-auto bottom-[-2vw] text-[1.1rem] font-semibold">
           Clientes
         </p>
       </div>

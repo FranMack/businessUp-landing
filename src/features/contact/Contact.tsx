@@ -27,7 +27,7 @@ export const Contact = () => {
             <br />
             <strong className="text-[1.6rem]">Te escuchamos!</strong>
           </div>
-          <div className=" xs:text-primary lg:text-[#ffff] flex flex-col gap-y-[2vh]">
+          <div className=" xs:text-primary lg:text-[#ffff] flex flex-col gap-y-[2vh] lg:mt-[5vh]">
             <div className="flex flex-col">
               <strong>Email</strong>
               <Link href="mailto:clientes@businessup.com.ar">
@@ -48,7 +48,7 @@ export const Contact = () => {
 
             <div className="w-full">
               <strong>Redes Sociales</strong>
-              <div className="xs:h-[3vh] sm:h-[6vh] lg:h-[3vh] w-full flex  items-center  xs:gap-x-[3vw] lg:gap-x-[1vw] mt-[1vh]">
+              <div className="xs:h-[3vh] phoneLandscape:h-[6vh] lg:h-[3vh] w-full flex  items-center  xs:gap-x-[3vw] lg:gap-x-[1vw] mt-[1vh]">
                 <SocialMedia />
               </div>
             </div>
@@ -60,7 +60,7 @@ export const Contact = () => {
         <ContactForm />
       </div>
 
-      <figure className="w-full h-1/3 absolute bottom-0 z--1">
+      <figure className="w-full h-1/3 absolute bottom-5 z--1">
         <Image
           width={2000}
           height={500}
@@ -69,6 +69,7 @@ export const Contact = () => {
           alt="background"
         />
       </figure>
+      <div className="w-full h-5 bg-primary absolute bottom-0"></div>
     </section>
   );
 };

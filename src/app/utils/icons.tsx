@@ -11,8 +11,6 @@ export function FacebookIcon({ onClick, color = "#ffff" }: PlayOptions) {
       height="100%"
       viewBox="-5 0 20 20"
       version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
     >
       <title>facebook [#176]</title>
       <desc>Created with Sketch.</desc>
@@ -49,8 +47,6 @@ export function InstagramIcon({ onClick, color = "#ffff" }: PlayOptions) {
       height="100%"
       viewBox="0 0 20 20"
       version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
     >
       <title>instagram [#167]</title>
       <desc>Created with Sketch.</desc>
@@ -87,8 +83,6 @@ export function LinkedinIcon({ onClick, color = "#ffff" }: PlayOptions) {
       height="100%"
       viewBox="0 0 20.00 20.00"
       version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
       fill="#000000"
     >
       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -142,11 +136,7 @@ export function TargetIcon({ color, className }: SolutionIconsProps) {
       className={className}
       version="1.0"
       id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="-32 -32 128.00 128.00"
-      enableBackground="new 0 0 64 64"
-      xmlSpace="preserve"
       fill={color ? color : "#693f91"}
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -170,10 +160,7 @@ export function SearchIncon({ color, className }: SolutionIconsProps) {
       fill={color ? color : "#693f91"}
       version="1.1"
       id="Capa_1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="-15.12 -15.12 60.48 60.48"
-      xmlSpace="preserve"
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
@@ -223,10 +210,7 @@ export function TeamIcon({ color, className }: SolutionIconsProps) {
       className={className}
       version="1.1"
       id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="-256 -256 1024.00 1024.00"
-      xmlSpace="preserve"
     >
       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
       <g
@@ -329,7 +313,7 @@ export function SolutionsIcon({ color, className }: SolutionIconsProps) {
   return (
     <svg
       height="100%"
-       style={{ padding: '10%' }}
+      style={{ padding: "10%" }}
       className={className}
       fill={color ? color : "#693f91"}
       viewBox="-3.5 -3.5 21.00 21.00"
@@ -354,7 +338,7 @@ export function SolutionsIcon({ color, className }: SolutionIconsProps) {
 export function HandShakingIcon({ color, className }: SolutionIconsProps) {
   return (
     <svg
-    height="100%"
+      height="100%"
       className={className}
       fill={color ? color : "#693f91"}
       viewBox="-12.8 -12.8 57.60 57.60"
@@ -373,20 +357,16 @@ export function HandShakingIcon({ color, className }: SolutionIconsProps) {
   );
 }
 
-
 export function AdviceIcon({ color, className }: SolutionIconsProps) {
   return (
     <svg
-     style={{ padding: '10%' }}
-    height="100%"
+      style={{ padding: "10%" }}
+      height="100%"
       className={className}
       fill={color ? color : "#693f91"}
       version="1.1"
       id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="-204.8 -204.8 921.60 921.60"
-      xmlSpace="preserve"
     >
       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
       <g

@@ -17,7 +17,7 @@ export const OurServices = () => {
       />
       <OurServicesDecoratorImages />
 
-      <div className="w-[80%]  grid xs:grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-10 items-start my-[7vh] ">
+      <div className="xs:w-[80%] md:w-[90%] lg:w-[80%] grid xs:grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-10 items-start my-[7vh] ">
         {ourServicesData.map((item) => {
           return <ServiceCard key={item.title} {...item} />;
         })}

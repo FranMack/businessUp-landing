@@ -16,7 +16,7 @@ export const ContactTextArea = ({ label, ...props }: Props) => {
           {label}
         </label>
         <textarea
-          className="w-[100%] xs:h-[12vh] sm:h-[18vh] lg:h-[12vh] pl-[2%] border-[1px]"
+          className="w-[100%] xs:h-[12vh] phoneLandscape:h-[20vh] lg:h-[12vh] pl-[2%] border-[1px]"
           style={{ borderColor: `${meta.touched && meta.error ? "red" : ""}` }}
           {...field}
           {...props}

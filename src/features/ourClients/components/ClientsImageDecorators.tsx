@@ -3,13 +3,7 @@ import { ImageDecoration } from "@/features/commons/ImageDecoration";
 export const ClientsImageDecorators = () => {
   return (
     <>
-      <ImageDecoration
-        imagePath={"/ui/image_decorator_1.png"}
-     heightClass={"xs:h-[6vh] lg:h-[8vh]"}
-        widthClass={"xs:w-[0vh] lg:w-[16vh]"}
-        verticalPositionClass="bottom-0"
-        horizontalPositionClass="left-[8vh]"
-      />
+  
       <ImageDecoration
         imagePath={"/ui/image_decorator_1.png"}
         heightClass={"xs:h-[6vh] lg:h-[8vh]"}
@@ -30,8 +24,8 @@ export const ClientsImageDecorators = () => {
         imagePath={"/ui/image_decorator_1.png"}
          heightClass={"xs:h-[6vh] lg:h-[8vh]"}
         widthClass={"xs:w-[12vh] lg:w-[16vh]"}
-        verticalPositionClass="xs:top-7 lg:top-[12vh]"
-        horizontalPositionClass="left-[45vw]"
+        verticalPositionClass="xs:top-7 lg:top-[5vh]"
+        horizontalPositionClass="right-[0vw]"
       />
       <ImageDecoration
         imagePath={"/ui/image_decorator_2.png"}

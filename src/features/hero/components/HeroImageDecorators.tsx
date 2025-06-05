@@ -28,7 +28,7 @@ export const HeroImageDecorators = () => {
       <ImageDecoration
         imagePath={"/ui/image_decorator_3.png"}
         heightClass={"xs:h-[20vh] lg:h-[30vh] saludoReveal"}
-        widthClass={"xs:w-[20vh] lg:w-[30vh]"}
+        widthClass={"xs:w-[20vh] sm:w-0 lg:w-[30vh]"}
         verticalPositionClass="xs:bottom-[25vh] lg:bottom-[10vh]"
         horizontalPositionClass="left-[25vw]"
       />

@@ -47,7 +47,7 @@ export const OurStrenght = () => {
       <h3 className="xs:text-[1.5rem] xs:text-center lg:text-start lg:text-[2rem] font-semibold text-primary w-[85%] mx-auto">
         ¿Por qué nos eligen ?
       </h3>
-      <div className="xs:w-[80%] lg:w-[90%] h-full  grid xs:grid-flow-cols-1 lg:grid-cols-2 mx-auto gap-10 ">
+      <div className="xs:w-[80%] md:w-[70%] lg:w-[90%] h-fit grid xs:grid-flow-cols-1 lg:grid-cols-2 mx-auto gap-10 ">
         {whyTheyChooseUsData.map((item, i) => {
           return (
             <div
@@ -55,16 +55,16 @@ export const OurStrenght = () => {
               className="h-fit w-full flex xs:flex-col lg:flex-row items-center xs:text-center lg:text-start"
             >
               <div
-                className={`xs:h-[6vh] sm:h-[12vh] lg:h-[12vh] aspect-square rounded-full ${bubbleBackgroundColors[i]}`}
+                className={`xs:h-[6vh] sm:h-[8vh] lg:h-[12vh] aspect-square rounded-full ${bubbleBackgroundColors[i]}`}
               >
                 <item.icon color="#ffff" />
               </div>
 
-              <div className="px-[5%]">
-                <h4 className="text-primary xs:text-[1.2rem] lg:text-[1.3rem] font-semibold">
+              <div className="lg:px-[5%]">
+                <h4 className="text-primary xs:text-[1.2rem] tabletPortrait:text-[1.5rem] lg:text-[1.3rem] font-semibold">
                   {item.title}
                 </h4>
-                <p className="xs:text-[0.9rem] lg:text-[1rem]">{item.text}</p>
+                <p className="xs:text-[0.9rem] md:text-[1rem] lg:text-[1rem]">{item.text}</p>
               </div>
             </div>
           );

@@ -29,7 +29,7 @@ export const AboutUsImagesDecoration = () => {
         imagePath={"/ui/image_decorator_1.png"}
          heightClass={"xs:h-[6vh] lg:h-[8vh]"}
         widthClass={"xs:w-[12vh] lg:w-[16vh]"}
-        verticalPositionClass="xs:top-6 lg:top-[10vh]"
+        verticalPositionClass="xs:top-6 lg:top-[0vh]"
         horizontalPositionClass="left-[0vw]"
       />
     </>

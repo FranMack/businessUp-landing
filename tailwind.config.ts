@@ -22,6 +22,9 @@ const config: Config = {
       md: '768px',
       lg: '1024px',
       xl: '1280px',
+       // Nuevas combinadas
+  tabletPortrait: { raw: "(min-width: 768px) and (orientation: portrait)" },
+  phoneLandscape: { raw: '(min-width: 768px) and (max-width: 1023px) and (orientation: landscape)' }
     },
   },
   plugins: [],

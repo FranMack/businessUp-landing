@@ -6,19 +6,19 @@ export const AboutUs = () => {
   return (
     <section
       id="aboutUs"
-      className="w-screen lg:h-screen relative flex xs:flex-col xs:justify-start xs:gap-y-[6vh] lg:flex-row bg-lightGray pt-[10vh] "
+      className="w-screen  relative flex xs:flex-col xs:justify-center xs:gap-y-[8vh] lg:flex-row items-center bg-lightGray py-[10vh]"
     >
       <AboutUsImagesDecoration />
-      <div className="xs:w-full lg:w-1/2 xs:h-fit lg:h-full   flex items-center justify-center ">
-        <div className="flex flex-col items-start w-[80%] xs:text-[1rem] lg:text-[1.2rem]  ">
+      <div className="xs:w-full lg:w-[45%] xs:h-fit lg:h-full  flex items-center justify-center  ">
+        <div className="flex flex-col items-start w-[80%] xs:text-[1.1rem] lg:text-[1.25rem] ">
           <Title
             title1="Sobre Nosotros"
-            title2="Nosotros "
+            title2="Nosotros"
             align="start"
             color="text-primary text-opacity-20"
           />
           <br />
-          <p className="pr-[10%]">
+          <p className="xs:pr-[10%] lg:pr-[5%]">
             Somos más que una consultora de software;{" "}
             <strong>
               somos tu socio estratégico en innovación tecnológica
@@ -26,7 +26,7 @@ export const AboutUs = () => {
             con foco en la <strong>visibilización de las mejoras.</strong>
           </p>
           <br />
-          <p className="pr-[10%]">
+          <p className="xs:pr-[10%] lg:pr-[5%]">
             Nos dedicamos a transformar con nuevas tecnologías, la manera en que
             las empresas gestionan sus{" "}
             <strong>
@@ -36,7 +36,7 @@ export const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className=" xs:w-full lg:w-1/2 lg:h-full flex items-center justify-center  ">
+      <div className=" xs:w-full lg:w-[55%] lg:h-full flex items-center justify-center  ">
         <AboutUsPrincipalImage />
       </div>
     </section>

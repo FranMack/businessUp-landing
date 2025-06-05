@@ -17,7 +17,7 @@ export const ContactInput = ({ label, ...props }: Props) => {
           {label}
         </label>
         <input
-          className="w-[100%] xs:h-[5vh] sm:h-[7vh] lg:h-[5vh] pl-[2%] border-[1px]"
+          className="w-[100%] xs:h-[5vh] phoneLandscape:h-[8vh]  lg:h-[5vh] pl-[2%] border-[1px]"
           style={{ borderColor: `${meta.touched && meta.error ? "red" : ""}` }}
           {...field}
           {...props}

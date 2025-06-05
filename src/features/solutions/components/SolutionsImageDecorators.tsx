@@ -25,18 +25,12 @@ export const SolutionsImageDecorators = () => {
         verticalPositionClass="bottom-0"
         horizontalPositionClass="left-0"
       />
-      <ImageDecoration
-        imagePath={"/ui/image_decorator_3.png"}
-      heightClass={"xs:h-[20vh] lg:h-[30vh]"}
-        widthClass={"xs:w-[0vh] lg:w-[30vh]"}
-        verticalPositionClass="bottom-[40vh]"
-        horizontalPositionClass="left-0"
-      />
+    
       <ImageDecoration
         imagePath={"/ui/image_decorator_1.png"}
        heightClass={"xs:h-[6vh] lg:h-[8vh]"}
         widthClass={"xs:w-[12vh] lg:w-[16vh]"}
-        verticalPositionClass="xs:top-[10vh] lg:bottom-[25vh]"
+        verticalPositionClass="xs:top-[0vh] lg:top-auto lg:bottom-[0vh]"
         horizontalPositionClass="xs:right-[2vw] lg:right-[2vw]"
       />
     </>

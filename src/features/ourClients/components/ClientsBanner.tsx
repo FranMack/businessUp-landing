@@ -17,7 +17,7 @@ export const ClientsBanner = () => {
     <div ref={refBanner} className="w-[80%] xs:h-[7vh] sm:h-[12vh] lg:h-[7vh]  mx-auto ">
       <Marquee
         speed={40}
-        gradient={true}
+        gradient={false}
         className="h-full w-full overflow-y-hidden "
       >
         {clients.map((item) => {

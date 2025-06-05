@@ -39,7 +39,7 @@ export const Solutions = () => {
     <Provider value={proviverValue}>
       <section
         id="solutions"
-        className="w-screen h-min-screen relative flex flex-col justify-center items-center "
+        className="w-screen relative flex flex-col justify-center items-center xs:pt-[10vh] lg:pt-0"
       >
         <SolutionsImageDecorators />
         <Title
@@ -48,12 +48,12 @@ export const Solutions = () => {
           title2="Soluciones"
           align="center"
         />
-        <figure className="absolute lg:h-[93%] xs:w-[40%] lg:w-[22%] right-0 botton-0 xs:hidden lg:block ">
+        <figure className="absolute lg:h-[93%] xs:w-[40%] lg:w-[20%] right-0 botton-0 xs:hidden lg:block ">
           <Image
             width={2000}
-            height={500}
-            className="h-full object-contain"
-            src="/soluciones-images/ELEMENTO-04.png"
+            height={1000}
+            className=" h-full object-contain "
+            src="/soluciones-images/ELEMENTO-04.png "
             alt="background"
           />
         </figure>
@@ -68,7 +68,7 @@ export const Solutions = () => {
           />
         </figure>
 
-        <div className="  lg:h-[80vh]  xs:w-[75%] lg:w-[90%] flex flex-col lg:gap-y-[4vw] items-center xs:mt-[3vh] lg:mt-[8vh] relative bg-red-3 ">
+        <div className="  lg:h-fit  xs:w-[75%] lg:w-[90%] flex flex-col lg:gap-y-[4vw] items-center xs:mt-[3vh] lg:mt-[8vh] relative ">
           <div className="xs:w-full lg:w-1/3 h-fit  flex flex-col items-center text-center lg:absolute left-0 xs:bottom-0 lg:bottom-auto ">
             <div
               className={`transition-all duration-700 ease-in-out transform  ${
@@ -80,14 +80,14 @@ export const Solutions = () => {
               <div className="lg:hidden xs:h-[8vh] sm:h-[12vh] w-full flex justify-center ">
                 <TargetIcon
                   className={`${
-                    focus === "desarrollos" ? "fill-[#ffff]" : "fill-[#693f91"
+                    focus === "desarrollos" ? "fill-[#ffff]" : "fill-[#693f91]"
                   } transition-colors duration-1000 `}
                 />
               </div>
-              <h3 className="text-primary  xs:text-[1.2rem] lg:text-[2rem] font-semibold">
+              <h3 className="text-primary  xs:text-[1.2rem] tabletPortrait:text-[1.5rem] lg:text-[1.9rem] font-semibold">
                 Innovación Tecnológica
               </h3>
-              <p className="lg:px-[13%] xs:text-[0.9rem] lg:text-[1rem]">
+              <p className="lg:px-[13%] xs:text-[0.9rem] md:text-[1rem]">
                 Desarrollamos soluciones que no solo funcionan: te representan.
                 Llevamos a tu negocio a la vanguardia, liderá tu industria
                 creando tendencias.
@@ -96,9 +96,9 @@ export const Solutions = () => {
           </div>
           <SolutionCenter />
 
-          <div className=" xs:w-full lg:w-1/3 h-fit  flex flex-col items-center text-center ">
+          <div className=" xs:w-full lg:w-1/3 h-fit  flex flex-col items-center text-center mt-[3vh]">
             <div
-              className={`transition-all duration-700 ease-in-out transform ${
+              className={`transition-all duration-700 ease-in-out transform  ${
                 focus !== "notImplemented"
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 -translate-y-5 pointer-events-none absolute"
@@ -107,15 +107,15 @@ export const Solutions = () => {
               <div className="lg:hidden xs:h-[8vh] sm:h-[12vh] w-full flex justify-center ">
                 <ClienteIcons
                   className={`${
-                    focus === "desarrollos" ? "fill-[#ffff]" : "fill-[#693f91"
+                    focus === "desarrollos" ? "fill-[#ffff]" : "fill-[#693f91]"
                   } transition-colors duration-1000 `}
                 />
               </div>
 
-              <h3 className="text-primary  xs:text-[1.2rem] lg:text-[2rem] font-semibold transition-all  duration-1000">
+              <h3 className="text-primary  xs:text-[1.2rem] tabletPortrait:text-[1.5rem] lg:text-[1.9rem] font-semibold transition-all  duration-1000">
                 Soluciones Visibles
               </h3>
-              <p className="lg:px-[5%] xs:text-[0.9rem] lg:text-[1rem]">
+              <p className="lg:px-[5%] xs:text-[0.9rem] md:text-[1rem]">
                 Innovación que funciona y además se percibe. Convertimos
                 inversiones tecnológicas en avances visibles, comprensibles y
                 alineados con los objetivos de quienes lideran y de quienes
@@ -124,7 +124,7 @@ export const Solutions = () => {
             </div>
           </div>
 
-          <div className="xs:w-full lg:w-1/3 h-fit  flex flex-col items-center text-center lg:absolute right-0 xs:bottom-0 lg:bottom-auto">
+          <div className="xs:w-full md:w-[70%] lg:w-1/3 h-fit  flex flex-col items-center text-center lg:absolute right-0 xs:bottom-0 lg:bottom-auto">
             <div
               className={`transition-all duration-700 ease-in-out transform ${
                 focus !== "notImplemented"
@@ -135,14 +135,14 @@ export const Solutions = () => {
               <div className="lg:hidden xs:h-[8vh] sm:h-[12vh] w-full flex justify-center ">
                 <SearchIncon
                   className={`${
-                    focus === "desarrollos" ? "fill-[#ffff]" : "fill-[#693f91"
+                    focus === "desarrollos" ? "fill-[#ffff]" : "fill-[#693f91]"
                   } transition-colors duration-1000 `}
                 />
               </div>
-              <h3 className="text-primary xs:text-[1.2rem] lg:text-[2rem] font-semibold">
+              <h3 className="text-primary xs:text-[1.2rem] tabletPortrait:text-[1.5rem] lg:text-[1.9rem] font-semibold">
                 Arquitectura operativa
               </h3>
-              <p className="lg:px-[14%] xs:text-[0.9rem] lg:text-[1rem]">
+              <p className="lg:px-[14%] xs:text-[0.9rem] md:text-[1rem]">
                 Innovación que funciona y además se percibe. Convertimos
                 inversiones tecnológicas en avances visibles, comprensibles y
                 alineados con los objetivos de quienes lideran y de quienes

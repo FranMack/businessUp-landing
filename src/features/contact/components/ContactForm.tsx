@@ -97,7 +97,7 @@ export const ContactForm = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className="mt-[2vh] xs:w-[80%] lg:w-[70%] xs:h-[6vh] sm:h-[10vh] lg:h-[6vh] bg-primary rounded-xl text-[#ffff] font-semibold hover hover:bg-secondary  duration-700 transition-colors"
+            className="mt-[2vh] xs:w-[80%] lg:w-[70%] xs:h-[6vh] phoneLandscape:h-[10vh] lg:h-[6vh] bg-primary rounded-xl text-[#ffff] font-semibold hover hover:bg-secondary  duration-700 transition-colors"
           >
             {isLoading ? (
               <BeatLoader color={"white"} speedMultiplier={0.4} />
