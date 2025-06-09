@@ -8,7 +8,7 @@ import { SocialMedia } from "../commons/Social Media";
 export const MobileMenu = () => {
   const navList = [
     { title: "Home", url: "/#home" },
-    { title: "¿Quienes somos?", url: "/#aboutUs" },
+    { title: "¿Quiénes somos?", url: "/#aboutUs" },
     { title: "Servicios", url: "/#ourServices" },
     { title: "Clientes", url: "/#ourClients" },
     { title: "Contacto", url: "/#contact" },

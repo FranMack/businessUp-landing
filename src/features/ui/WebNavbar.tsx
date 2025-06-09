@@ -6,7 +6,7 @@ import { useScrollPosition } from "../../hooks";
 export const WebNavbar = () => {
   const navList = [
     { title: "Home", url: "/#home" },
-    { title: "¿Quienes somos?", url: "/#aboutUs" },
+    { title: "¿Quiénes somos?", url: "/#aboutUs" },
     { title: "Servicios", url: "/#ourServices" },
     { title: "Clientes", url: "/#ourClients" },
     { title: "Contacto", url: "/#contact" },
