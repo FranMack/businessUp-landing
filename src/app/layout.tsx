@@ -1,4 +1,5 @@
 import { MenuMobileContextProvider } from "@/context/mobileMenu.context";
+import { Analytics } from "@vercel/analytics/next"
 import type { Metadata, Viewport } from "next";
 import { ToastContainer } from "react-toastify";
 import { Footer, MobileMenu, Navbar, WhatsUpButton } from "../features";
@@ -75,6 +76,7 @@ export default function RootLayout({
         </MenuMobileContextProvider>
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
